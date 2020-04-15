@@ -1,5 +1,5 @@
 # StitchTestFailover
-This will create a new Stitch App called "TestFailover-PoV" with the purpose of running the "Test Failover" function on predefined clusters. The core of this Stitch App is made up of just 1 function and 4 values that will need to be updated for your project.
+This will create a new Stitch App called "TestFailover-PoV" with the purpose of running the "Test Failover" function on predefined clusters. The core of this Stitch App is made up of just 1 Webhook function and 4 values that will need to be updated for your project.
 
 ### Prequisites:
 - Existing Atlas Project
@@ -50,10 +50,13 @@ stitch-cli import --project-id=ProjectID --strategy=replace
         - failover-password: This will be your API Private Key
 
 4. Review and Deploy Changes
-5. Test the Function, monitor the cluster for changes in Primary.
+5. Find the webhook url, and test with curl
+```sh
+curl https://.....
+```
 
 ### Special Thanks:
-- Ronan Bohan for the code provided in this repo
+- [@rbohan](https://github.com/rbohan) for the code provided in this repo
 
 ### Disclaimer:
 This stitch app is not battle tested, nor regularly maintained, and does not include a warranty! Feel free to update and contribute as needed!

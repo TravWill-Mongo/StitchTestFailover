@@ -1,0 +1,6 @@
+{
+    "name": "TestFailoverWebhook",
+    "type": "http",
+    "config": {},
+    "version": 1
+}
