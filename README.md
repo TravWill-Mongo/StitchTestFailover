@@ -36,7 +36,7 @@ stitch-cli import --project-id=ProjectID
 # 3. Create the initial Secrets for the Public and Private API Keys
 # Note: 
 #    These can be updated from the Atlas UI Later. We just need the secrets to exist for the import to succeed.
-stitch-cli secrets add --name=failover-password --value=SuperSecretValue!
+stitch-cli secrets add --name=ApiPrivateKey --value=SuperSecretValue!
 
 # 4. Re-Import the Stitch App, now that the secrets exist
 stitch-cli import --project-id=ProjectID --strategy=replace
